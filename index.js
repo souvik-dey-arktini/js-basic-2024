@@ -30,3 +30,44 @@ multiple line comment
 // Behaves as if it were the value it contains.
 // 1. declaration let x;
 // 2. assignment x = 100;
+
+// let x;
+// let y;
+// x =10;
+// y=20;
+// console.log(x,y);
+
+
+
+// class User {
+//     static userCount = 0;
+//     constructor(username){
+//       this.username = username
+//       User
+//     }
+// }
+
+// example of cluser//
+
+// const outerFunction=()=>{
+//   const number = 10;
+//   const innerFunction =()=>{
+//         console.log(number)
+//   }
+//   innerFunction();
+//   console.log(number)
+// }
+
+// outerFunction();
+const createCounter =()=>{
+let count = 0;
+const increment = ()=>{
+  count++;
+  console.log(`count incresed to ${count}`);
+}
+return{increment}
+}
+const countValu = createCounter()
+countValu.increment()
+countValu.increment()
+countValu.increment()
