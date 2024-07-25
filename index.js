@@ -65,9 +65,16 @@ const increment = ()=>{
   count++;
   console.log(`count incresed to ${count}`);
 }
-return{increment}
+const getCount =()=>{
+  console.log(`count is ${count}`);
+}
+return{increment,getCount}
 }
 const countValu = createCounter()
 countValu.increment()
 countValu.increment()
 countValu.increment()
+
+console.log(countValu.getCount())
+
+
