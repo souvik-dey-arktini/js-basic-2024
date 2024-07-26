@@ -59,22 +59,38 @@ multiple line comment
 // }
 
 // outerFunction();
-const createCounter =()=>{
-let count = 0;
-const increment = ()=>{
-  count++;
-  console.log(`count incresed to ${count}`);
-}
-const getCount =()=>{
-  console.log(`count is ${count}`);
-}
-return{increment,getCount}
-}
-const countValu = createCounter()
-countValu.increment()
-countValu.increment()
-countValu.increment()
+// const createCounter =()=>{
+// let count = 0;
+// const increment = ()=>{
+//   count++;
+//   console.log(`count incresed to ${count}`);
+// }
+// const getCount =()=>{
+//   console.log(`count is ${count}`);
+// }
+// return{increment,getCount}
+// }
+// const countValu = createCounter()
+// countValu.increment()
+// countValu.increment()
+// countValu.increment()
 
-console.log(countValu.getCount())
+// console.log(countValu.getCount())
+
+const myage = document.getElementById('myage');
+const myInput = document.getElementById('myInput');
+const myResult = document.getElementById('myResult');
 
 
+document.getElementById("myInput").onchange=()=>{
+  console.log(document.getElementById("myInput").value)
+  age = document.getElementById("myInput").value;
+  if(age >= 18){
+    console.log('you can enter my site')
+  }else if (age <= 18){
+    console.log('you can not enter my site')
+  }else if (age == 0){
+    console.log('your age need to important')
+  }
+  
+}
