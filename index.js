@@ -77,20 +77,26 @@ multiple line comment
 
 // console.log(countValu.getCount())
 
-const myage = document.getElementById('myage');
+
 const myInput = document.getElementById('myInput');
 const myResult = document.getElementById('myResult');
+const myButton = document.getElementById('myBtn')
 
 
-document.getElementById("myInput").onchange=()=>{
-  console.log(document.getElementById("myInput").value)
+myButton.onclick=function(){
+  age=myInput.value;
+  myResult.textContent = `my age ${age}`;
+  console.log(age);;
   age = document.getElementById("myInput").value;
   if(age >= 18){
     console.log('you can enter my site')
+    myResult.textContent = `you can enter my site my age ${age}`;
   }else if (age <= 18){
     console.log('you can not enter my site')
+    myResult.textContent = `you can not enter my site${age}`;
   }else if (age == 0){
     console.log('your age need to important')
+    myResult.textContent = `your age need to important${age}`;
   }
   
 }
