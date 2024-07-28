@@ -78,25 +78,45 @@ multiple line comment
 // console.log(countValu.getCount())
 
 
-const myInput = document.getElementById('myInput');
-const myResult = document.getElementById('myResult');
-const myButton = document.getElementById('myBtn')
+// const myInput = document.getElementById('myInput');
+// const myResult = document.getElementById('myResult');
+// const myButton = document.getElementById('myBtn')
 
 
-myButton.onclick=function(){
-  age=myInput.value;
-  myResult.textContent = `my age ${age}`;
-  console.log(age);;
-  age = document.getElementById("myInput").value;
-  if(age >= 18){
-    console.log('you can enter my site')
-    myResult.textContent = `you can enter my site my age ${age}`;
-  }else if (age <= 18){
-    console.log('you can not enter my site')
-    myResult.textContent = `you can not enter my site${age}`;
-  }else if (age == 0){
-    console.log('your age need to important')
-    myResult.textContent = `your age need to important${age}`;
-  }
+// myButton.onclick=function(){
+//   age=myInput.value;
+//   myResult.textContent = `my age ${age}`;
+//   console.log(age);;
+//   age = document.getElementById("myInput").value;
+//   if(age >= 18){
+//     console.log('you can enter my site')
+//     myResult.textContent = `you can enter my site my age ${age}`;
+//   }else if (age <= 18){
+//     console.log('you can not enter my site')
+//     myResult.textContent = `you can not enter my site${age}`;
+//   }else if (age == 0){
+//     console.log('your age need to important')
+//     myResult.textContent = `your age need to important${age}`;
+//   }
   
+// }
+// callback
+
+goodby()
+hello()
+painding()
+function hello (){
+  console.log('hello sourav')
 }
+function goodby(){
+  console.log('good by sourav')
+}
+
+function painding(){
+  settimeout(()=>{
+    console.log('4 sce i am awiting')
+  },4000)
+}
+settimeout(()=>{
+  console.log('4 sce i am awiting')
+},4000)
