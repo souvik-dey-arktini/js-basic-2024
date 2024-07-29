@@ -102,21 +102,52 @@ multiple line comment
 // }
 // callback
 
-goodby()
-hello()
-painding()
-function hello (){
-  console.log('hello sourav')
-}
-function goodby(){
-  console.log('good by sourav')
-}
+// goodby()
+// hello()
+// painding()
 
-function painding(){
-  settimeout(()=>{
-    console.log('4 sce i am awiting')
-  },4000)
-}
-settimeout(()=>{
-  console.log('4 sce i am awiting')
-},4000)
+// function goodby(){
+//   console.log('good by sourav')
+// }
+
+// function painding(){
+//   settimeout(()=>{
+//     console.log('4 sce i am awiting')
+//   },4000)
+// }
+// settimeout(()=>{
+//   console.log('4 sce i am awiting')
+// },1000)
+
+
+// sun(dispaly, 3,4)
+
+// function sun (callback, x,y){
+//   let result = x + y;
+//   callback(result)
+// }
+
+// function dispaly (result){
+//   console.log(result)
+// }
+
+
+// setInterval(() => {
+//   console.log('sourav chongrey hi')
+//   clearInterval()
+// }, 1000);
+
+// callback 
+
+const checkbutton = document.getElementById('mycheckbtn');
+const showPara = document.getElementById('myP')
+const submitbutton = document.getElementById('mysubmitbtn')
+
+submitbutton.onclick = function() {
+    const isChecked = checkbutton.getAttribute('aria-checked') === 'true';
+    if (isChecked) {
+        showPara.textContent = 'Hello user';
+    } else {
+        showPara.textContent = 'You are not subscribed';
+    }
+};
