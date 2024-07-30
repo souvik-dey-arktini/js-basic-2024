@@ -139,15 +139,22 @@ multiple line comment
 
 // callback 
 
-const checkbutton = document.getElementById('mycheckbtn');
-const showPara = document.getElementById('myP')
-const submitbutton = document.getElementById('mysubmitbtn')
+// const checkbutton = document.getElementById('mycheckbtn');
+// const showPara = document.getElementById('myP')
+// const submitbutton = document.getElementById('mysubmitbtn')
 
-submitbutton.onclick = function() {
-    const isChecked = checkbutton.getAttribute('aria-checked') === 'true';
-    if (isChecked) {
-        showPara.textContent = 'Hello user';
-    } else {
-        showPara.textContent = 'You are not subscribed';
-    }
-};
+// submitbutton.onclick = function() {
+//     const isChecked = checkbutton.getAttribute('aria-checked') === 'true';
+//     if (isChecked) {
+//         showPara.textContent = 'Hello user';
+//     } else {
+//         showPara.textContent = 'You are not subscribed';
+//     }
+// };
+
+
+// if-else sortcut
+// ternary
+let age = 18;
+let isAdult = age >= 18? 'you are Adult' : 'you are a baby';
+console.log(isAdult)
