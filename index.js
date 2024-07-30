@@ -155,6 +155,10 @@ multiple line comment
 
 // if-else sortcut
 // ternary
-let age = 18;
-let isAdult = age >= 18? 'you are Adult' : 'you are a baby';
-console.log(isAdult)
+// let age = 18;
+// let isAdult = age >= 18? 'you are Adult' : 'you are a baby';
+// console.log(isAdult)
+
+// let Student = true;
+// let message = Student ? 'you are student' : 'you are not student';
+// console.log(message)
