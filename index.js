@@ -162,3 +162,16 @@ multiple line comment
 // let Student = true;
 // let message = Student ? 'you are student' : 'you are not student';
 // console.log(message)
+
+// let purchaseAmount = 2020;
+
+// let discount = purchaseAmount>= 200 ? 50 : 0;
+// console.log(`your total is $${purchaseAmount - purchaseAmount * (discount/100)}`);
+
+
+// STRING SLICING
+
+const fullName = "Sourav Chongrey";
+console.log(fullName)
+let firstName = fullName.slice(0,5)
+console.log(firstName)
