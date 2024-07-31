@@ -171,7 +171,14 @@ multiple line comment
 
 // STRING SLICING
 
-const fullName = "Sourav Chongrey";
-console.log(fullName)
-let firstName = fullName.slice(0,5)
-console.log(firstName)
+// const fullName = "Sourav Chongrey";
+// console.log(fullName)
+// let firstName = fullName.slice(0,5)
+// console.log(firstName)
+
+// let numStor = [1,2,3,4,5];
+// let slicenumStor = numStor.slice(0,5);
+// console.log(slicenumStor)
+// let string = "Hello, world!";
+// let slicedString = string.slice(7, 12);
+// console.log(slicedString); 
