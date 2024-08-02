@@ -240,3 +240,49 @@ const myCharValue14 = myName.charAt(14);
 console.log(myCharValue14)
 // ans = y
 // ........................end..................
+// index of method
+// what is the indexOf() method?
+// The indexOf() method returns the index of the first occurrence of a specified value in a string.
+const myIndexValue0 = myName.indexOf("s");
+console.log(myIndexValue0)
+// ans = 0
+const myIndexValue1 = myName.indexOf("o");
+console.log(myIndexValue1)
+// ans = 1
+const myIndexValue2 = myName.indexOf("u");
+console.log(myIndexValue2)
+// ans = 2
+const myIndexValue3 = myName.indexOf("r");
+console.log(myIndexValue3)
+// ans = 3
+const myIndexValue4 = myName.indexOf("a");
+console.log(myIndexValue4)
+// ans = 4
+const myIndexValue5 = myName.indexOf("v");
+console.log(myIndexValue5)
+// ans = 5
+const myIndexValue6 = myName.indexOf("c");
+console.log(myIndexValue6)
+// ans = 6
+const myIndexValue7 = myName.indexOf("h");
+console.log(myIndexValue7)
+// ans = 7
+const myIndexValue8 = myName.indexOf("o");
+console.log(myIndexValue8)
+// ans = 8
+const myIndexValue9 = myName.indexOf("n");
+console.log(myIndexValue9)
+// ans = 9
+const myIndexValue10 = myName.indexOf("g");
+console.log(myIndexValue10)
+// ans = 10
+const myIndexValue11 = myName.indexOf("r");
+console.log(myIndexValue11)
+// ans = 11
+const myIndexValue12 = myName.indexOf("e");
+console.log(myIndexValue12)
+// ans = 12
+const myIndexValue13 = myName.indexOf("y");
+console.log(myIndexValue13)
+// ans = 13
+// ........................end..................
