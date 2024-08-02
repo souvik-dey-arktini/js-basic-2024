@@ -366,4 +366,18 @@ const myReplaceValue0 = myPhNo.replaceAll("-","/");
 console.log(myReplaceValue0)
 // ans = 700/158/9285
 // ........................end..................
+// padStart() method
+// what is the padStart() method?
+// The padStart() method pads a string with another string.
+const myPadStartValue0 = myName.padStart(20,"*");
+console.log(myPadStartValue0)
+// ans = **********sourav chongrey
+// ........................end..................
+// padEnd() method
+// what is the padEnd() method?
+// The padEnd() method pads a string with another string.
+const myPadEndValue0 = myName.padEnd(20,"*");
+console.log(myPadEndValue0)
+// ans = sourav chongrey**********
+// ........................end..................
 
