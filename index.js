@@ -182,3 +182,61 @@ multiple line comment
 // let string = "Hello, world!";
 // let slicedString = string.slice(7, 12);
 // console.log(slicedString); 
+
+
+///////
+// ................string method..............
+ const myName = "sourav chongrey";
+//  play with text
+// charAt() method;
+// what is the charAt() method?
+// The charAt() method returns the character at a specified index in a string.
+const myCharValue0 = myName.charAt(0);
+console.log(myCharValue0)  
+//  ans = S
+const myCharValue1 = myName.charAt(1);
+console.log(myCharValue1)  
+// ans = o
+const myCharValue2 = myName.charAt(2);
+console.log(myCharValue2)  
+// ans = u
+
+const myCharValue3 = myName.charAt(3);
+console.log(myCharValue3)
+// ans = r
+
+const myCharValue4 = myName.charAt(4);
+console.log(myCharValue4)
+// ans = a
+const myCharValue5 = myName.charAt(5);
+console.log(myCharValue5)
+// ans = v
+const myCharValue6 = myName.charAt(6);
+
+console.log(myCharValue6)
+// ans = blnk
+const myCharValue7 = myName.charAt(7);
+console.log(myCharValue7)
+// ans = c
+const myCharValue8 = myName.charAt(8);
+console.log(myCharValue8)
+// ans = h
+const myCharValue9 = myName.charAt(9);
+console.log(myCharValue9)
+// ans = o
+const myCharValue10 = myName.charAt(10);
+console.log(myCharValue10)
+// ans = n
+const myCharValue11 = myName.charAt(11);
+console.log(myCharValue11)
+// ans = g
+const myCharValue12 = myName.charAt(12);
+console.log(myCharValue12)
+// ans = r
+const myCharValue13 = myName.charAt(13);
+console.log(myCharValue13)
+// ans = e
+const myCharValue14 = myName.charAt(14);
+console.log(myCharValue14)
+// ans = y
+// ........................end..................
