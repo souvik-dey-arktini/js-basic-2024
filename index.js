@@ -293,6 +293,19 @@ const myTrimValue0 = myName.trim();
 console.log(myTrimValue0)
 // ans = sourav chongrey
 // ........................end..................
-
+// toUpperCase() method
+// what is the toUpperCase() method?
+// The toUpperCase() method converts a string to uppercase letters.
+const myUpperCaseValue0 = myName.toUpperCase();
+console.log(myUpperCaseValue0)
+// ans = SOURAV CHONGREY
+// ........................end..................
+//tolowerCase() method
+// what is the toLowerCase() method?
+// The toLowerCase() method converts a string to lowercase letters.
+const myLowerCaseValue0 = myName.toLowerCase();
+console.log(myLowerCaseValue0)
+// ans = sourav chongrey
+// ........................end..................
 
 
