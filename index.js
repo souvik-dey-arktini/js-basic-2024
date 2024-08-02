@@ -358,3 +358,12 @@ console.log(myEndsWithValue0)
   console.log("no it is not a value " )
  }
 //   ........................end..................
+//replaceAll() method
+// what is the replace() method?
+// The replace() method replaces a specified value with another value in a string.
+let myPhNo = 700-158-9285;
+const myReplaceValue0 = myPhNo.replaceAll("-","/");
+console.log(myReplaceValue0)
+// ans = 700/158/9285
+// ........................end..................
+
