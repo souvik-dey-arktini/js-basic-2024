@@ -314,4 +314,47 @@ const myRepeatValue0 = myName.repeat(2);
 console.log(myRepeatValue0)
 // ans = sourav chongrey sourav chongrey
 // ........................end..................
-
+// StartsWith() method
+// what is the startsWith() method?
+// The startsWith() method returns true if a string begins with a specified value, otherwise false.
+const myStartsWithValue0 = myName.startsWith("s");
+console.log(myStartsWithValue0)
+// ans = true
+// return true
+ if(myStartsWithValue0){
+  console.log("yes it is a value " )
+ }else{
+  console.log("no it is not a value " )
+ }
+  const myStartsWithValue1 = myName.startsWith(" ");
+  console.log(myStartsWithValue1)
+  // ans = false
+  // return false
+  if(myStartsWithValue1){
+    console.log("yes it is a value " )
+  }else{
+    console.log("no it is not a value " )
+  }
+//   ........................end..................
+// endsWith() method
+// what is the endsWith() method?
+// The endsWith() method returns true if a string ends with a specified value, otherwise false.
+const myEndsWithValue0 = myName.endsWith("y");
+console.log(myEndsWithValue0)
+// ans = true
+// return true
+ if(myEndsWithValue0){
+  console.log("yes it is a value " )
+ }else{
+  console.log("no it is not a value " )
+ }
+ const myEndsWithValue1 = myName.endsWith(" ");
+ console.log(myEndsWithValue1)
+ // ans = false
+ // return false
+ if(myEndsWithValue1){
+  console.log("yes it is a value " )
+ }else{
+  console.log("no it is not a value " )
+ }
+//   ........................end..................
