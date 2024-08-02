@@ -286,3 +286,13 @@ const myIndexValue13 = myName.indexOf("y");
 console.log(myIndexValue13)
 // ans = 13
 // ........................end..................
+//  trim method
+// what is the trim() method?
+// The trim() method removes whitespace from both sides of a string.
+const myTrimValue0 = myName.trim();
+console.log(myTrimValue0)
+// ans = sourav chongrey
+// ........................end..................
+
+
+
