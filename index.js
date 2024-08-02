@@ -307,5 +307,11 @@ const myLowerCaseValue0 = myName.toLowerCase();
 console.log(myLowerCaseValue0)
 // ans = sourav chongrey
 // ........................end..................
-
+// repeat() method
+// what is the repeat() method?
+// The repeat() method returns a new string with a specified number of copies of the string it was called on.
+const myRepeatValue0 = myName.repeat(2);
+console.log(myRepeatValue0)
+// ans = sourav chongrey sourav chongrey
+// ........................end..................
 
