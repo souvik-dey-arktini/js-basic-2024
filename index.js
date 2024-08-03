@@ -486,4 +486,48 @@ if(temp <= 0 || temp >= 10){
 }
 // ans = The weather is good or
 // ........................end..................
+// = assignmemt operator  const a = 10;
+// == comparison operator (compare if values are equal) ;
+// === strict equality operator (compare if values & datatype ara equal);
+// != inequality operator
+// !== strict inequality operator
 
+
+const PI = 3.14;
+// == comparison operator (compare if values are equal) ;
+if(PI == "3.14" ){
+  console.log("That is PI")
+} else {
+  console.log("That is NOT PI")
+}
+// ans =That is PI
+
+// === strict equality operator (compare if values & datatype ara equal);
+if(PI === "3.14" ){
+  console.log("That is PI")
+} else {
+  console.log("That is NOT PI")
+}
+// ans = That is NOT PI
+// === strict equality operator (compare if values & datatype ara equal);
+if(PI === 3.14 ){
+  console.log("That is PI")
+} else {
+  console.log("That is NOT PI")
+}
+// ans = That is  PI
+
+// != inequality operator
+if(PI != "3.14"){
+  console.log("This is PIppppp")
+}else{
+  console.log("This is not PIiii")
+}
+// ans =This is not PI
+// !== strict inequality operator
+if(PI !==  3.14){
+  console.log("This not  PIppppp")
+}else{
+  console.log("This is PI")
+}
+// ans = This is not PI
