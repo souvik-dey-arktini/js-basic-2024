@@ -361,9 +361,10 @@ console.log(myEndsWithValue0)
 //replaceAll() method
 // what is the replace() method?
 // The replace() method replaces a specified value with another value in a string.
-let myPhNo = 700-158-9285;
-const myReplaceValue0 = myPhNo.replaceAll("-","/");
-console.log(myReplaceValue0)
+let myPhNo = "700-158-9285";
+const myReplaceValue0 = myPhNo.replaceAll("-", "/");
+console.log(myReplaceValue0);
+
 // ans = 700/158/9285
 // ........................end..................
 // padStart() method
@@ -379,5 +380,42 @@ console.log(myPadStartValue0)
 const myPadEndValue0 = myName.padEnd(20,"*");
 console.log(myPadEndValue0)
 // ans = sourav chongrey**********
+// ........................end..................
+// string slicing method
+// what is the slice() method?
+// The slice() method extracts a part of a string and returns the extracted part in a new string.
+//  String.slice(start, end)
+ // start = The position where to start the extraction. Default is 0.
+ // end = The position (up to) where to end the extraction. Default is last character.
+ // The slice() method extracts parts of a string and returns the extracted parts in a new string.
+const mySliceValue0 = myName.slice(0,6);
+console.log(mySliceValue0)
+// ans = sourav
+const mySliceValue1 = myName.slice(6,12);
+console.log(mySliceValue1)
+// ans = chong
+const mySliceValue2 = myName.slice(6);
+console.log(mySliceValue2)
+// ans = chongrey
+ const mySliceValue3 = myName.slice(0,1);
+ console.log(mySliceValue3)
+ // ans = S
+ const mySliceValue4 = myName.slice(0, myName.indexOf(" "));
+ console.log(mySliceValue4)
+  // ans = sourav
+  const mySliceValue5 = myName.slice(myName.indexOf(" ")+1);
+  console.log(mySliceValue5)
+   // ans = chongrey
+   const myEmail = "souravchongrey@gmail.com";
+   const myEmailSliceValue0 = myEmail.slice(0, myEmail.indexOf("@"));
+   console.log(myEmailSliceValue0)
+   // ans = souravchongrey
+   const myEmailSliceValue1 = myEmail.slice(myEmail.indexOf("@")+1);
+   console.log(myEmailSliceValue1)
+   // ans = gmail.com
+   const myEmailSliceValue2 = myEmail.slice(myEmail.indexOf("@")+1, myEmail.indexOf("."));
+   console.log(myEmailSliceValue2)
+   // ans = gmail
+
 // ........................end..................
 
