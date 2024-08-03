@@ -425,19 +425,65 @@ console.log(mySliceValue2)
  console.log(myMethodChainingValue0)
  // ans = SOURAV
 // ......no method chaining method..........
- let username = window.prompt("Enter your name");
-console.log(username)
-username = username.trim();
-let letter = username.charAt(0).toUpperCase();
-console.log(letter)
-letter += username.slice(1).toLowerCase();
-console.log(letter)
+//  let username = window.prompt("Enter your name");
+
+// console.log(username)
+// username = username.trim();
+// let letter = username.charAt(0).toUpperCase();
+// console.log(letter)
+// letter += username.slice(1).toLowerCase();
+// console.log(letter)
 
 
     // ........................end..................
 // .....method chaining method..........
-let username1 = window.prompt("Enter your name");
-username1 = username1.trim().charAt(0).toUpperCase() + username1.slice(1).toLowerCase();
-console.log(username1)
+// let username1 = window.prompt("Enter your name");
+// username1 = username1.trim().charAt(0).toUpperCase() + username1.slice(1).toLowerCase();
+// console.log(username1)
+// ........................end..................
+// logical oprators 
+// what is the logical oprators ?
+// used to combine or manipulate boolean values (true or false)
+// AND = && two condition willbe true;
+// OR = || alteast one conditon willbe true;
+// NOT = ! reverse the value; true = true ; !true = false;
+const isSunny = true;
+if(isSunny){
+  console.log("It is sunny outside")
+}else{
+  console.log("It is not sunny outside")
+}
+//  ans = It is sunny outside
+// using NOT
+
+if(!isSunny){
+  console.log("It is sunny outside")
+}else{
+  console.log("It is not sunny outside")
+}
+//  ans = It is not sunny outside
+// using AND &&
+ const temp = 20;
+ if(temp> 0){
+  console.log ('The weather is good');
+ }else if(temp <= 30){
+  console.log('The weather is very good');
+ }else{
+  console.log("The Weather is very bad");
+ }
+// 2 conditon true  using AND && 
+if(temp > 0 && temp <= 30){
+  console.log ('The weather is good and');
+}else{
+  console.log("The Weather is very bad");
+}
+// ans = The weather is good and
+// using or ||
+if(temp <= 0 || temp >= 10){
+  console.log ('The weather is good or');
+}else{
+  console.log("The Weather is very bad"); 
+}
+// ans = The weather is good or
 // ........................end..................
 
