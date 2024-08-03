@@ -418,4 +418,26 @@ console.log(mySliceValue2)
    // ans = gmail
 
 // ........................end..................
+//  method chaining method
+// what is the method chaining method?
+// The method chaining is a technique that can be used to simplify code in scenarios that involve calling multiple methods on an object in a single statement without having to repeatedly type the object's name.
+ const myMethodChainingValue0 = myName.slice(0, myName.indexOf(" ")).toUpperCase();
+ console.log(myMethodChainingValue0)
+ // ans = SOURAV
+// ......no method chaining method..........
+ let username = window.prompt("Enter your name");
+console.log(username)
+username = username.trim();
+let letter = username.charAt(0).toUpperCase();
+console.log(letter)
+letter += username.slice(1).toLowerCase();
+console.log(letter)
+
+
+    // ........................end..................
+// .....method chaining method..........
+let username1 = window.prompt("Enter your name");
+username1 = username1.trim().charAt(0).toUpperCase() + username1.slice(1).toLowerCase();
+console.log(username1)
+// ........................end..................
 
