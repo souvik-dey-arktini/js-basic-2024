@@ -744,3 +744,22 @@ console.log(isValidEmail("souravchongrey@gmail.com"));
 console.log(isValidEmail("souravchongreygmail.com"));
 // ans = false
 // ........................end..................
+
+// variable scope = a variable declared inside a function has a local scope. it is limited to that function. it cannot be accessed from outside the function.
+                  //  whare  a variable is recongized and accessible (local vs global)
+
+                  // let x = 10;
+                  // global scope
+                  function myFunction(){
+                    //loclal scope
+                    let x = 40
+                    let y = 20;
+                    console.log(x)
+                    console.log(y)
+                  }
+                  myFunction()
+                  // ans = 40
+                  // ans = 20
+
+// .....................................
+
