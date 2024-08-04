@@ -544,20 +544,20 @@ if(PI !==  3.14){
 // using while loop
 
 // repeting loop while some condition is true
-while (userName === ""|| userName == null){
-   userName= window.prompt("you did not enter your name");
-}
+// while (userName === ""|| userName == null){
+  //  userName= window.prompt("you did not enter your name");
+// }
   console.log(`hello ${userName}`)
 
-  
+
 // more example
 let logIn = false;
 let username;
 let password;
 
-while(!logIn){
-  userName = window.prompt(`Enter your username`);
-  password = window.prompt(`Enter your password`);
+// while(logIn){
+  // userName = window.prompt(`Enter your username`);
+  // password = window.prompt(`Enter your password`);
 
   if(userName === "sourav" && password === "chongrey"){
     logIn = true;
@@ -565,6 +565,31 @@ while(!logIn){
   }else{
     console.log(`invalid username or password`)
   }
-}
+// }
 
   // ........................end..................
+  // for loop
+  //  for loop = repeat some code FOR some number of times;
+
+    // increment 
+  for(let i=0; i < 20; i++){
+    console.log(`my number ${i}`)
+  }
+  // increment 2 
+  for (let i = 0; i<= 20; i=i+2){
+    console.log(`my number ${i}`)
+  }
+  // infinite loop
+  // for(;;){
+  //   console.log("hello")
+  // }
+  // ........................end..................
+// decrement
+for (let i = 20; i > 0; i--){
+  console.log(`my number ${i}`)
+}
+// decrement 2
+ for (let i = 30; i > 0; i=i-2){
+  console.log(`my number ${i}`)
+ }
+   
