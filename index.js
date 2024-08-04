@@ -592,4 +592,22 @@ for (let i = 20; i > 0; i--){
  for (let i = 30; i > 0; i=i-2){
   console.log(`my number ${i}`)
  }
-   
+  //  continue
+  // 13 mising
+  for (let i = 0; i < 20; i++){
+    if(i == 13){
+      continue;
+    }else{
+      console.log(`my number ${i}`)
+    }
+  }
+  //break
+  // break after 12
+  for(let i = 0; i<20; i++){
+    if(i == 13){
+      break;
+    }else{
+      console.log(`my number ${i}`)
+    }
+  }
+  
