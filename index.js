@@ -692,3 +692,42 @@ function divide(x,y){
 console.log(divide(12,4))
 // ans = 3
 
+// isEvent
+
+function isEvent(x){
+  if(x % 2 === 0){
+    return true
+  }else{
+    return false
+  }
+};
+
+console.log(isEvent(5))
+// ans = false
+
+console.log(isEvent(6))
+// ans = true
+function isOdd(x){
+  if(x % 2 !== 0){
+    return true
+  }else{
+    return false
+  }
+};
+console.log(isOdd(5)) 
+// ans = true
+console.log(isOdd(6)) 
+// ans = false
+// ........................end..................
+// isEvent using ternary
+ function isEvent(n){
+  return n % 2 === 0? true : false
+
+ }
+ console.log(isEvent(6));
+//  isOdd using ternary
+function isOdd(n){
+  return n % 2 !== 0? true : false
+}
+console.log(isOdd(5))
+// ........................end..................
