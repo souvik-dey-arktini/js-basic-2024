@@ -531,3 +531,40 @@ if(PI !==  3.14){
   console.log("This is PI")
 }
 // ans = This is not PI
+// ........................end................
+// while loop 
+// while loop = repeat some code WHILE some condition is true;
+  let userName = "";
+  if(userName === ""){
+    console.log ("you did't enter your name");
+
+  }else{
+    console.log(`hello ${userName}`)
+  }
+// using while loop
+
+// repeting loop while some condition is true
+while (userName === ""|| userName == null){
+   userName= window.prompt("you did not enter your name");
+}
+  console.log(`hello ${userName}`)
+
+  
+// more example
+let logIn = false;
+let username;
+let password;
+
+while(!logIn){
+  userName = window.prompt(`Enter your username`);
+  password = window.prompt(`Enter your password`);
+
+  if(userName === "sourav" && password === "chongrey"){
+    logIn = true;
+    console.log(`welcome ${userName}`)
+  }else{
+    console.log(`invalid username or password`)
+  }
+}
+
+  // ........................end..................
