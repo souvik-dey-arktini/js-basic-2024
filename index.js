@@ -610,4 +610,85 @@ for (let i = 20; i > 0; i--){
       console.log(`my number ${i}`)
     }
   }
-  
+
+  // function = a block of code which only runs when it is called;
+  // A section of reusable code. Declare code one, use it whenever you want. call the function to execute that code.
+
+// Example of function
+function myFunction1(x,y){
+    return x+y;
+}
+console.log(myFunction1(5,6));
+
+// basic Example of Function
+function myFunction(){
+  console.log("hello world")
+
+  console.log(`this is very easy function`)
+}
+// reused it
+myFunction()
+myFunction()
+myFunction()
+// reused it
+myFunction()
+myFunction()
+myFunction()
+myFunction()
+// reused it
+
+
+
+ // parameter and argument
+// This is parameter
+ function HappyBirthday(name, age){
+  console.log(`Happy birthday to you my dear ${name}`)
+  console.log(`you are ${age} yr old`)
+ }
+//  This is amgument
+HappyBirthday("sourav", 25)
+
+
+// return statement not used
+// not return someting
+function add(x,y){
+  let result = x + y;
+}
+let store1 = add(2,3);
+//ans = undefine
+console.log(store1)
+
+// return statement  used
+//  return someting
+
+function sumNum (x,y){
+  let sumValu = x+y;
+  return sumValu;
+
+}
+let store = sumNum(2,4)
+// get function value
+console.log(store)
+// ans = 6
+
+// more function example
+
+function subtract(x,y){
+  return x - y;
+}
+console.log(subtract(7,4))
+// ans = 3
+
+function multiple(x,y){
+  return x * y
+
+}
+console.log(multiple(3,4))
+// ans = 12
+
+function divide(x,y){
+  return x / y
+}
+console.log(divide(12,4))
+// ans = 3
+
