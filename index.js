@@ -730,4 +730,17 @@ function isOdd(n){
   return n % 2 !== 0? true : false
 }
 console.log(isOdd(5))
+
+// last example 
+function isValidEmail(email){
+  if(email.includes('@')){
+    return true;
+  }else{
+    return false;
+  }
+}
+console.log(isValidEmail("souravchongrey@gmail.com"));
+// ans = true
+console.log(isValidEmail("souravchongreygmail.com"));
+// ans = false
 // ........................end..................
