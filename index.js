@@ -763,3 +763,71 @@ console.log(isValidEmail("souravchongreygmail.com"));
 
 // .....................................
 
+// array = a variable like structure that can hold more than 1 value
+// elemets inside array can be of any type
+let fruit = ["apple", "orange", "banana","Coconut"];
+console.log(fruit)
+// ans = [ 'apple', 'orange', 'banana' ]
+// access one items
+console.log(fruit[0])
+// ans = apple
+console.log(fruit[1]);
+// ans = orange
+console.log(fruit[2]);
+// ans = banana
+console.log(fruit[3]);
+// ans = undefined
+
+// ans = apple  
+// change one items
+fruit[0] = "mango"
+console.log(fruit)
+// ans = [ 'mango', 'orange', 'banana' ]  
+// 2nd type chenge elemets
+fruit.push("pineapple");
+console.log(fruit)
+// ans = [ 'mango', 'orange', 'banana', 'pineapple' ]
+
+// 3rd type chenge elemets
+fruit.pop();
+console.log(fruit)
+// ans = [ 'mango', 'orange', 'banana' ]
+
+// 4th type chenge elemets
+fruit.unshift("kiwi");
+console.log(fruit)
+// ans = [ 'kiwi', 'mango', 'orange', 'banana' ]    
+
+// 5th type chenge elemets
+fruit.shift();
+console.log(fruit)
+// ans = [ 'mango', 'orange', 'banana' ]
+// 6th type chenge elemets
+
+let numOfFruits = fruit.length;
+console.log(numOfFruits)
+// add one item Coconut
+// now total items is Fruits index is 4
+// mamual
+let index = fruit.indexOf('mango');
+console.log(index)
+// ans = 0
+// using loop
+
+for(let i =0; i<= fruit.length; i++){
+  console.log(fruit[i])
+}
+ 
+// loop using incremet 2
+for(let i =0; i<= fruit.length; i=i+2){
+  console.log(fruit[i]);
+}
+// ans = mango, banana
+ // decremetnt
+ for(let i = fruit.length; i>=0; i--){
+  console.log(fruit[i]) 
+}
+//  shotcut loop
+for (let f of fruit){
+  console.log(f)
+}
