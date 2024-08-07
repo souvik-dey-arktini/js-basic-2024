@@ -869,3 +869,60 @@ console.log(fruits)
 let newarray = [...numbers, ...fruit, "sourav", "chongrey"];
 console.log(newarray)
 // ans = [ 1, 2, 3, 4, 5, 'mango', 'orange', 'banana', 'pineapple', 'sourav', 'chongrey' ]
+
+// rest parameter = (...rest)allow a function work with a variable mumber argumemts by bundling them into an array
+
+// what is rest parameter?
+//  it is used to pass an indefinite number of arguments to a function
+// it is used to create an array of arguments
+function myfevFood(...foods){
+  console.log(foods);
+  console.log(...foods)
+}
+
+const food1 = "samosa";
+const food2 = "achar";
+const food3 = "pizza";
+const food4 = "lichi";
+// default array
+myfevFood()
+
+myfevFood(food1, food2, food3, food4)
+// function retun rest parameter
+function getFood(...foods){
+  return foods
+}
+
+const myFood = getFood(food1, food2, food3, food4);
+console.log(myFood);
+// ans = [ 'samosa', 'achar', 'pizza', 'lichi' ]
+
+// sum using function / and rest para
+
+function sum (...numbers){
+  let total = 0;
+  for(let number of numbers){
+    total = total + number
+  }
+  return total
+
+}
+let mysum = sum(1,2,3,4,5,6,7,8,9,10);
+console.log(`my total is ${mysum}`)
+function average(...numbers){
+  let total = 0;
+  for(let number of numbers){
+    total = total + number
+  }
+  return total/numbers.length
+
+}
+let myaverage = average(100,2,3,4,5,6,7,8,9,10);
+console.log(`my total is ${myaverage}`)
+
+// combind string
+function combindString(...strings){
+  return strings.join(" ")
+}
+const fullName = combindString("mr", "sourav", "chongrey","India")
+console.log(fullName)
