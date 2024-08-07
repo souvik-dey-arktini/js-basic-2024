@@ -838,9 +838,34 @@ console.log(fruit)
 // ans = [ 'orange', 'mango', 'banana', coconut' ]
 
 // spread operator
+// what is spread operator?
+// it is used to spread out the elements of an array
+// it is used to copy the elements of an array
+// ...allows an iterable such as array or string to be spread into individual elements
 let numbers = [1,2,3,4,5];
+console.log(...numbers);
 let maximum = Math.max(...numbers);
 console.log(maximum);
 let minimum = Math.min(...numbers);
 console.log(minimum);
 // 
+let username1 = "sourav";
+console.log(username1)
+// inside array we can use spread operator
+let letter = [...username1];
+
+console.log(letter);
+// ans = [ 's', 'o', 'u', 'r', 'a', 'v' ]
+// add - to array each charecter
+let letterdash = [...username1].join('-')
+console.log(letterdash)
+// ans = s-o-u-r-a-v
+// copy array
+let fruits =[...fruit];
+console.log(fruits)
+// ans = [ 'mango', 'orange', 'banana', 'pineapple' ]
+
+// combine array
+let newarray = [...numbers, ...fruit, "sourav", "chongrey"];
+console.log(newarray)
+// ans = [ 1, 2, 3, 4, 5, 'mango', 'orange', 'banana', 'pineapple', 'sourav', 'chongrey' ]
