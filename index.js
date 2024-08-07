@@ -831,3 +831,9 @@ for(let i =0; i<= fruit.length; i=i+2){
 for (let f of fruit){
   console.log(f)
 }
+// ans = [ 'mango', 'orange', 'banana' ]
+
+fruit.sort().reverse();
+console.log(fruit)
+// ans = [ 'orange', 'mango', 'banana', coconut' ]
+
