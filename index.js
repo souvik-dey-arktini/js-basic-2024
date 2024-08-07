@@ -837,3 +837,10 @@ fruit.sort().reverse();
 console.log(fruit)
 // ans = [ 'orange', 'mango', 'banana', coconut' ]
 
+// spread operator
+let numbers = [1,2,3,4,5];
+let maximum = Math.max(...numbers);
+console.log(maximum);
+let minimum = Math.min(...numbers);
+console.log(minimum);
+// 

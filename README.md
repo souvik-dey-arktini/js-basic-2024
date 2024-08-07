@@ -4,4 +4,7 @@
 3.install live server
 5.run live server
 ........Thanks...........
-1.
+
+
+.spread operator
+
