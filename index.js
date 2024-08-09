@@ -973,7 +973,7 @@ Sum(displayFunction,1,2);
 // simple exmple of foreach
 let array = [1,2,3,4,5,6,7];
 
-array.forEach(Double)
+array.forEach(Square)
 array.forEach(Display)
 function Display (elements){
 console.log(elements)
@@ -992,7 +992,10 @@ function Double ( element,index,array){
 
 }
  
-
+// power function
+function Square(element,index,array){
+     array[index] = Math.pow(element, 2) 
+}
 
 
 
