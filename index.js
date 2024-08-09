@@ -968,6 +968,33 @@ function displayFunction (result){
 
 Sum(displayFunction,1,2);
 
+// forEach = method used to iterate over an array and apply and a specifed funtion (callback) to each elemet
+//  array.forEach(callback);
+// simple exmple of foreach
+let array = [1,2,3,4,5,6,7];
+
+array.forEach(Double)
+array.forEach(Display)
+function Display (elements){
+console.log(elements)
+}
+// next forEach example
+array.forEach(increments)
+function increments (number){
+    let result =+ number + 4;
+    console.log(result);
+}
+// next example
+//  do opration inside array
+
+function Double ( element,index,array){
+  array[index] = element *  10
+
+}
+ 
+
+
+
 
 
 

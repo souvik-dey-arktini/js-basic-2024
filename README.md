@@ -8,3 +8,7 @@
 
 .spread operator
 .rest parameter
+.callback function 
+.forEach
+
+
