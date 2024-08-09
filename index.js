@@ -926,3 +926,48 @@ function combindString(...strings){
 }
 const fullName = combindString("mr", "sourav", "chongrey","India")
 console.log(fullName)
+
+// callback = a function that is passed as an argument to another function .
+// used to handel async function:
+  // 1.reading file 
+  // 2.Network requests
+  // Interacting with databases
+  
+
+
+ 
+  hello(); // 2nd run 
+  goodBy();  // frist run 
+
+  // so need callback function  excution one by one;
+
+
+   function hello(){
+    setTimeout(()=>{
+      console.log("hellow");
+    },4000)
+   };
+   function goodBy(){
+    console.log(`good by`);
+   }
+
+
+
+  //  like this
+  // callback function 
+
+  function  Sum(Callback , x,y){
+    console.log("ami holam sum function amar pore akdom must dislay function result korbe")
+    let result = x + y;
+    Callback(result);
+  } 
+
+function displayFunction (result){
+  console.log(`the result is ${result}`)
+}
+
+Sum(displayFunction,1,2);
+
+
+
+
