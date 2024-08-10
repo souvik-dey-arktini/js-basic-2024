@@ -1112,7 +1112,11 @@ myTask()
   }
 
   // function expressions = a awy to define to function as values or variables
-
+  // 1. Higher-order function
+  // 2.Closures
+  //3. Events 
+  // Event Listeners
+  
    const myTask2 = function(){
     console.log("Hello This my Task2");
 
