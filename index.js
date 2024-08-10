@@ -1174,3 +1174,16 @@ const totalSum = newNumber.reduce(function(total, element){
 });
 console.log(totalSum);
 
+// arrow function =  function written as an expression in a concise way good for simple functions that use only once (parameter ) => some code
+function hello (){
+  console.log("hello")
+}
+
+
+const hello1 = (name, age)=> console.log(`hello world ${name}, your age is ${age}`);
+hello1("sourav chongrey", 30)
+
+// settimeout
+setTimeout(()=>console.log("hellow world"), 4000)
+
+// ...................................................
