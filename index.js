@@ -1083,3 +1083,23 @@ function lessWord(element){
   return element.length > 5;
 }
 
+// .reduce() = reduce a the elements of an array to a single value;
+
+const shopingCard = [29,34,67,89,78,12];
+const total = shopingCard.reduce(sum);
+console.log(total)
+
+function sum (total, elemets ){
+  return total + elemets
+}
+// ans = 309
+
+const gradesStudent = [75,65,78,99,24,78];
+
+const maximum1 = gradesStudent.reduce(maximunGrade);
+console.log(maximum1)
+// ans = 99
+
+function maximunGrade(total, element){
+ return Math.max(total, element) ;
+}
