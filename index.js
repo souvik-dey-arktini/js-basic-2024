@@ -998,6 +998,53 @@ function Square(element,index,array){
 }
 
 
+// some array opration
+// foreach
+ let fruitss = ["apple", "orange", "banana", "mango"];
+ fruitss.forEach(upperCaseF)
+ fruitss.forEach(Show)
+
+ function upperCaseF(element, index, array){
+   array[index] = element.toUpperCase()
+ }
+ function Show(element){
+  console.log(element)
+ }
 
 
+// .map() = accepts a callback and applics that function to each element of an array, that return a new array
+const digit = [1,2,3,4,5,6,7,8];
+const squares = digit.map(Squaren);
+console.log(squares)
+// ans = [ 1, 4, 9, 16, 25, 36, 49, 64 ]
+const cube1 = digit.map(cube);
+console.log(cube1)
+// ans = [ 1, 8, 27, 64, 125, 216, 343, 512 ]
+function Squaren(element){
+  return Math.pow(element, 2)
+}
+function cube(element){
+  return Math.pow(element, 3)
+}
+
+// 
+const students = ["ram","sham","sita","gita"];
+const names = students.map(upperCase);
+console.log(names)
+// ans = [ 'RAM', 'SHAM', 'SITA', 'GITA' ]
+function upperCase(element){
+  return element.toUpperCase()
+}
+// dates
+const dates = ["2024-6-10","2024-6-11","2024-6-12","2024-6-13"];
+const formatedDates = dates.map(formatDates)
+console.log(formatedDates);
+// ans = [ '06/10/2024', '06/11/2024', '06/12/2024', '06/13/2024' ]
+function formatDates(element){
+  const parts = element.split("-");
+ 
+  return `${parts[1]}/${parts[2]}/${parts[0]}` 
+}
+
+// .filter() =  creates a new
 
