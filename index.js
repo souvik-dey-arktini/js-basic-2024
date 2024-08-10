@@ -1103,3 +1103,70 @@ console.log(maximum1)
 function maximunGrade(total, element){
  return Math.max(total, element) ;
 }
+
+// function declaration = define a reusable block of code 
+//                        that performs a specific task 
+myTask()
+  function myTask (){
+    console.log("I complet my task ")
+  }
+
+  // function expressions = a awy to define to function as values or variables
+
+   const myTask2 = function(){
+    console.log("Hello This my Task2");
+
+   }
+   myTask2()
+  //  timeout function
+   setTimeout(function(){
+    console.log("This is my settime out");
+   },3000);
+
+  const newNumber=[9,10,11,12,13,15,16];
+  // using map method
+const mySquareNumber = newNumber.map(function(element){
+  return Math.pow(element, 2);
+});
+console.log(mySquareNumber)
+// ans =  [
+//     81,
+//     100,
+//     121,
+//     144,
+//     169,
+//     225,
+//     256
+// ]
+// next example in map method 
+ const cubez = newNumber.map(function(element){
+  return Math.pow(element,3);
+ })
+ console.log(cubez);
+// ans = [
+//     729,
+//     1000,
+//     1331,
+//     1728,
+//     2197,
+//     3375,
+//     4096
+// ]
+
+// apply filter method using function expression
+
+const fillEvent = newNumber.filter(function(element){
+    return element % 2 === 0;
+});
+console.log(fillEvent)
+
+const fillOdd = newNumber.filter(function(element){
+  return element % 2 !== 0;
+})
+console.log(fillOdd)
+
+const totalSum = newNumber.reduce(function(total, element){
+  return total + element
+});
+console.log(totalSum);
+
