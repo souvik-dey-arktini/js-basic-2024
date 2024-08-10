@@ -1046,5 +1046,40 @@ function formatDates(element){
   return `${parts[1]}/${parts[2]}/${parts[0]}` 
 }
 
-// .filter() =  creates a new
+// .filter() =  creates a new array by filtering out elements
+
+let numbersq = [1,2,3,4,5,6,7,8,9,10];
+let myEvenNumber = numbersq.filter(isEven);
+console.log(myEvenNumber);
+// ans = [ 2, 4, 6, 8, 10 ]
+function isEven(elements){
+  return elements % 2 === 0;
+
+}
+let myOddNumbers = numbersq.filter(isOdd)
+console.log(myOddNumbers)
+function isOdd(elements){
+return elements % 2 !== 0;
+}
+
+const ages = [10,11,12,13,14,15,16,17,18,19,20];
+const adultClass = ages.filter(isAult);
+console.log(adultClass)
+const childClass = ages.filter(isChild)
+console.log(childClass)
+function isAult(element){
+  return element >= 18 ;
+}
+
+
+function isChild(element){
+  return element < 16 ;
+}
+
+const addFruits=["apple", "orange", "banana", "mango"];
+const lessWords = addFruits.filter(lessWord)
+console.log(lessWords )
+function lessWord(element){
+  return element.length > 5;
+}
 
