@@ -1199,10 +1199,8 @@ const person1 = {
    isEmployed : true,
    sayHello: () => console.log("hello i am sourav chongey"),
    eat: ()=> console.log ("plz don't eat animal meat"),
-
-
-
 }
+
 const person2 = {
  fristName:"Akash",
  lastName : "kottal",
@@ -1212,10 +1210,38 @@ const person2 = {
  eat : () => console.log("i am eating samosa")
 
 }
-
 person2.eat();
 person1.eat();
 console.log(person1.lastName)
 
+// this = reference to the current object where THIS is used (the object depends on the immediate context person.name = this.name)
+const anotherPerson = {
+  fullName: "soura",
+  favFood: "dal vat",
+  sayHello() { 
+    console.log(`Hi, I am ${this.fullName}`);
+  },
+  eat() {
+    console.log(`I am eating ${this.favFood}`);
+  },
+};
 
- 
+anotherPerson.sayHello(); // Outputs: Hi, I am soura
+anotherPerson.eat();      // Outputs: I am eating dal vat
+
+const personnn = {
+  fullName: "soura",
+  favFood: "dal vat",
+
+  sayHello: () => {
+    console.log(`Hi, I am ${personnn.fullName}`);
+  },
+
+  eat: () => {
+    console.log(`I am eating ${personnn.favFood}`);
+  },
+};
+
+personnn.sayHello(); // Outputs: Hi, I am soura
+personnn.eat();      // Outputs: I am eating dal vat
+
