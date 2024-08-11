@@ -1187,3 +1187,35 @@ hello1("sourav chongrey", 30)
 setTimeout(()=>console.log("hellow world"), 4000)
 
 // ...................................................
+// object = A collection of related properties and / or methods cam represent real world objects (people,products,places)
+//  object = {key : value,
+ //              function()}
+//          }
+
+const person1 = {
+   firstName:"sourav",
+   lastName : "chongrey",
+   age:30,
+   isEmployed : true,
+   sayHello: () => console.log("hello i am sourav chongey"),
+   eat: ()=> console.log ("plz don't eat animal meat"),
+
+
+
+}
+const person2 = {
+ fristName:"Akash",
+ lastName : "kottal",
+ age:22,
+ isEmpolyed:false,
+ sayHello: () => console.log("hello i am akash kottal"),
+ eat : () => console.log("i am eating samosa")
+
+}
+
+person2.eat();
+person1.eat();
+console.log(person1.lastName)
+
+
+ 
