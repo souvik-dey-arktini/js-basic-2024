@@ -1245,3 +1245,57 @@ const personnn = {
 personnn.sayHello(); // Outputs: Hi, I am soura
 personnn.eat();      // Outputs: I am eating dal vat
 
+// constructor = special method for defining the properties and methods of objects
+// 
+// constructor
+// .................................
+const car1 = {
+  make: "Ford",
+  model: "Mustang",
+  year: 1964,
+  color: "red",
+  drive: function(){
+    console.log(`i am driving ${this.model}`)
+  }
+};
+const car2 = {
+  make:"Nissan",
+  model:"Skyline",
+  year:2019,
+  color:"blue",
+  drive: function(){
+    console.log(`i am driving ${this.model}`) 
+  }
+}
+
+const car3 = {
+  make:"Honda",
+  model:"Civic",
+  year:2019,
+  color:"black",
+  drive: function(){
+    console.log(`i am driving ${this.model}`)
+  }
+}
+car1.drive();
+car2.drive();
+car3.drive();
+
+// make multiple Object
+// thats why came in constructor
+
+function Car (model,year,color){
+  this.model = model;
+  this.year = year;
+  this.color = color;
+  this.drive = function(){
+    console.log(`i am driving ${this.model}`)
+  }
+}
+const car4 = new Car("Mustang",1964,"red");
+const car5 = new Car("Skyline",2019,"blue");
+const car6 = new Car("Civic",2019,"black");
+car4.drive();
+car5.drive();
+car6.drive();
+// ............................................................
