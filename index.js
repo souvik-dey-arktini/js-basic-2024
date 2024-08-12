@@ -1328,7 +1328,45 @@ const totaln = product2.calculationTotal(salesTax);
 console.log(`Total price (with tax): $${totaln.toFixed(2)}`);
 
 const product3 = new Product("underPant", 200);
-const totalp = product3.calculationTotal(selesTax);
+const totalp = product3.calculationTotal(salesTax);
 console.log(`Total price (with tax): $${totalp.toFixed(2)}`);
 // ............................................................
 
+// static = keyword that defind properties or methods that belong to class itself rather than the objects created from that class (class owns anything static , not objects)
+
+class MathUtil{
+  static PI = 3.141559
+  static getDiameter(radius){
+    return 2 * radius * MathUtil.PI;
+  }
+  static getCircumference(radius){
+    return 2 * MathUtil.PI * radius;
+  }
+   
+}
+console.log(MathUtil.PI);
+console.log(MathUtil.getDiameter(10));
+console.log(MathUtil.getCircumference(10));
+
+// ............................................................
+class User{
+  static userCount = 0;
+  constructor(username){
+    this.username = username;
+    User.userCount++;
+  }
+
+  static getUserCount(){
+    console.log(`Total user count: ${User.userCount}`);
+    return User.userCount;
+  } 
+   sayHello(){
+ console.log(`Hello, ${this.username}!`);
+  }
+}
+const user1 = new User("sourav");
+const user2 = new User("Akash");
+const user3 = new User("Raj");
+console.log(User.getUserCount());
+
+console.log(User.userCount);
