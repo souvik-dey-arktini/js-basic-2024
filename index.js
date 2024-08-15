@@ -1419,38 +1419,33 @@ fish.swim()
 // super = the parent
 
 class Animal1 {
-  constructor( ){
-
+  constructor(name, age ){
+    this.name = name;
+    this.age = age;
   }
   
 }
 
 class Rat extends Animal1 {
     constructor(name, age, runSpeed){
-      super();
-       this.name = name;
-      this.age = age;
-      this.runSpeed = runSpeed;
+      super(name, age);
+    this.runSpeed = runSpeed;
 
     }
 }
 
 class Foring  extends Animal1 {
-  constructor(name, age, flySpeed){
-    super();
-      this.name = name;
-      this.age = age;
-      this.flySpeed = flySpeed ;
+  constructor(name, age,flySpeed){
+    super(name, age);
+          this.flySpeed = flySpeed ;
       
     }
 }
 
 class Dog extends Animal1 {
   constructor(name, age, runSpeed){
-    super();
-    this.name = name;
-    this.age = age;
-    this.runSpeed = runSpeed;
+    super(name, age);
+  this.runSpeed = runSpeed;
 
   }
 }
