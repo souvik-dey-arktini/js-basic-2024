@@ -1456,4 +1456,58 @@ const dog = new Dog ("dog", 10, 30);
 console.log(rat.name);
 console.log(dog.name);
 console.log(foring.name);
+console.log(rat.runSpeed);
 // ............................................................
+// getter = special method that makes a property readable
+// setter = special method that makes a property writable
+// validate and moddify a value when reading/writing a property
+
+// rectangle example garbeg valu addes thats why getter and setter come in
+
+ class Rectangle1 {
+  constructor(width, height){
+      this.width = width;
+      this.height = height
+  }
+ }
+
+ const rectangle1 = new Rectangle1(-11111, "height");
+ console.log(rectangle1)
+ console.log(rectangle1.width)
+//  rectangle example garbeg valu addes thats why getter and setter come in
+ class Rectangle2 {
+
+
+  constructor(width, height){
+      this.width = width;
+      this.height = height
+  }
+  set width(newWidth){
+    if(newWidth>0){
+      this._width = newWidth
+
+    }else{
+      console.error('width must be a positive number');
+    }
+  }
+  set height(newHeight){
+    if(newHeight>0){
+      this._height = newHeight
+
+    }else{
+      console.error('height must be a positive number');
+    }
+  }
+ }
+
+ const rectangle2 = new Rectangle2(3, 4);
+ console.log(rectangle2)
+ console.log(rectangle2.width) // undefine that why getter comming
+
+ rectangle2.width = 10;
+ rectangle2.height = 20;
+ console.log(rectangle2.width) //// undefine that why getter comming
+
+
+
+///////////////////////////////////////////
