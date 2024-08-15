@@ -1370,3 +1370,95 @@ const user3 = new User("Raj");
 console.log(User.getUserCount());
 
 console.log(User.userCount);
+
+// inheritence = allow a new class to inherits all the properties and methods from an existing class (parent -> child) helps with code reuseability
+
+class Animal {
+  alive = true
+  eat(){
+    console.log(`This ${this.name} is eating`);
+
+  }
+  sleep(){
+    console.log(`This ${this.name} is sleeping`)
+  }
+
+}
+
+class Rabbit extends Animal{
+  name = "rabbit"
+  run(){
+    console.log(`This ${this.name} is runing`);
+  }
+}
+class Fish extends Animal {
+  name = "fish"
+  swim(){
+    console.log(`This ${this.name} is swimming`);
+    
+  }
+}
+
+class Hawk extends Animal{
+  name = "hawk"
+}
+
+const fish = new Fish();
+const rabbit = new Rabbit()
+const hawk = new Hawk()
+rabbit.eat()
+rabbit.sleep()
+fish.eat()
+fish.sleep()
+hawk.eat()
+hawk.sleep()
+fish.swim()
+// 
+// super = keyword is used in classes to call the construtor or access the properties and methods of a parent (superclass) 
+//  this = this object
+// super = the parent
+
+class Animal1 {
+  constructor( ){
+
+  }
+  
+}
+
+class Rat extends Animal1 {
+    constructor(name, age, runSpeed){
+      super();
+       this.name = name;
+      this.age = age;
+      this.runSpeed = runSpeed;
+
+    }
+}
+
+class Foring  extends Animal1 {
+  constructor(name, age, flySpeed){
+    super();
+      this.name = name;
+      this.age = age;
+      this.flySpeed = flySpeed ;
+      
+    }
+}
+
+class Dog extends Animal1 {
+  constructor(name, age, runSpeed){
+    super();
+    this.name = name;
+    this.age = age;
+    this.runSpeed = runSpeed;
+
+  }
+}
+
+const rat = new Rat ("rat", 10, 20);
+const foring = new Rat ("foring", 10, 60);
+const dog = new Dog ("dog", 10, 30);
+console.log(rat.name);
+console.log(dog.name);
+console.log(foring.name);
+// ............................................................
