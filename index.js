@@ -1511,3 +1511,83 @@ console.log(rat.runSpeed);
 
 
 ///////////////////////////////////////////
+// getter
+
+class Rectangle3 {
+  constructor(width, height){
+    this.width = width;
+    this.height = height
+}
+
+set width(newWidth){
+  if(newWidth>0){
+    this._width = newWidth
+
+  }else{
+    console.error('width must be a positive number');
+  }
+}
+set height(newHeight){
+  if(newHeight>0){
+    this._height = newHeight
+
+  }else{
+    console.error('height must be a positive number');
+  }
+}
+get width(){
+  return `${this._width.toFixed(1)}cm`;
+}
+get height(){
+  return `${this._height.toFixed(1)}cm`;
+}
+get area (){
+  return `${(this._width * this._height).toFixed(1)}cm`;
+}
+}
+
+const rectangle3 = new Rectangle3(3, 4);
+console.log(rectangle3.area) // show output
+console.log(rectangle3.height) // show 
+console.log(rectangle3.area) // show output
+
+// 
+// destructuing = extract values from arrays and objects, then assign then to variables in a convenient way
+// [] = to perfrom array destructing
+// {} = to perfrom object destructing
+
+// why used const and let
+const pi = 3.1416;
+// 
+let count = 0;
+count = count + 1;
+// 
+const obj = [];
+obj.push(1);    // Allowed
+obj[0] = 2;     // Allowed
+console.log(obj); // Output: [2]
+// 
+const obj = [];
+
+obj.push('apple');  // You can add items to the array.
+obj[0] = 'orange';  // You can modify items in the array.
+
+console.log(obj);  // Output: ['orange']
+
+obj = ['banana'];  // This will throw an error because reassignment is not allowed.
+// 2nd exaple
+// const দিয়ে একটি অ্যারে ডিক্লেয়ার করা হলো
+const fruits = ['apple', 'banana', 'mango'];
+
+// অ্যারেতে নতুন একটি ফল যোগ করা হলো
+fruits.push('orange');
+
+// প্রথম ফলের নাম পরিবর্তন করা হলো
+fruits[0] = 'grape';
+
+console.log(fruits); 
+// আউটপুট: ['grape', 'banana', 'mango', 'orange']
+
+// এখন যদি আমরা অ্যারেটিকে পুনরায় অন্য মান দিয়ে রিফারেন্স করতে চাই, যেমন:
+fruits = ['pineapple', 'strawberry']; 
+// তাহলে এটি একটি ত্রুটি দেবে কারণ `const` দিয়ে ডিক্লেয়ার করা হয়েছে।
