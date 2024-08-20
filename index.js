@@ -1581,3 +1581,50 @@ displayPerson1(person20)
 function displayPerson1({firstName,lastName,age,job = "undo"}){
   console.log(`my name is ${firstName} and lastName is ${lastName} and age is ${age} and job is ${job}`)
 }
+
+// nested objects = objects inside of other objects.
+//                  Allows you to represent more complex data structures
+                  // Child objects is enclosed by a parent object
+
+                  // person{Addree{}, contactInfo{}}
+                  // shoppingCart{keyBord{}, Mouse{}, Monitor{}}
+
+                  const person22 ={
+                    fullName: "sourav chongrey",
+                    age:30,
+                    isStudent: true,
+                    hobbies:["singing", "dancing", "reading"],
+                    address:{
+                      street:'Hooghly',
+                      city : "Arambagh",
+                      Country:"MYINDIA"
+                    }
+                  }
+                  console.log(person22.fullName, person22.address.city)
+                  console.log(person22.hobbies[0])
+     for(const property in person22.address){
+       console.log(person22.address[property])
+      // console.log(property)
+
+     }
+    //  complex nested object
+    class Person23 {
+      constructor(name,age,...address){
+        this.name = name;
+        this.age = age;
+        this.address = new Address(...address)
+      }
+    }
+     class Address{
+      constructor(street, city, country){
+        this.street = street;
+        this.city = city;
+        this.country = country
+      }
+     }
+
+
+     const p1 = new Person23("sourav", 30, "Hooghly", "Arambagh", "MYINDIA");
+     const p2 = new Person23("akash", 30, "Hooghly", "Arambagh", "MYINDIA");
+     console.log(p1.address.country)
+     console.log(p2)
