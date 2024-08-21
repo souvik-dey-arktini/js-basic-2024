@@ -1507,7 +1507,6 @@ console.log(rectangle3.area); // show output
 
 //
 
-
 // why used const and let
 const pi = 3.1416;
 //
@@ -1544,87 +1543,151 @@ console.log(fruitsm);
 // swap the value two variavle
 let a = 10;
 let b = 20;
-[a, b]=[b, a];
+[a, b] = [b, a];
 console.log(a, b);
 //swap 2 element in an array
 const colorsm = ["red", "green", "blue", "sayan", "sourav", "chongrey"];
-[colorsm[0], colorsm[2]] = [colorsm[2], colorsm[0]]
-console.log(colorsm)
+[colorsm[0], colorsm[2]] = [colorsm[2], colorsm[0]];
+console.log(colorsm);
 // assign array elements to variable
 const [fristColor, secondColor, thirdColor, ...rest] = colorsm;
 console.log(fristColor);
 console.log(secondColor);
 console.log(thirdColor);
-console.log([...rest])
+console.log([...rest]);
 // extract values from objects
 
 const person20 = {
   firstName: "sourav",
   lastName: "chongrey",
   age: 30,
-  job: "farming and codding"
-}
-const person21 ={
+  job: "farming and codding",
+};
+const person21 = {
   firstName: "akash",
   lastName: "bijoy",
-  age:20
-
-}
-const {firstName, lastName, age, job ="undo"} = person21
+  age: 20,
+};
+const { firstName, lastName, age, job = "undo" } = person21;
 console.log(firstName);
 console.log(lastName);
 console.log(age);
-console.log(job)
-displayPerson1(person20)
+console.log(job);
+displayPerson1(person20);
 // destructuring in function parameters
 
-function displayPerson1({firstName,lastName,age,job = "undo"}){
-  console.log(`my name is ${firstName} and lastName is ${lastName} and age is ${age} and job is ${job}`)
+function displayPerson1({ firstName, lastName, age, job = "undo" }) {
+  console.log(
+    `my name is ${firstName} and lastName is ${lastName} and age is ${age} and job is ${job}`
+  );
 }
 
 // nested objects = objects inside of other objects.
 //                  Allows you to represent more complex data structures
-                  // Child objects is enclosed by a parent object
+// Child objects is enclosed by a parent object
 
-                  // person{Addree{}, contactInfo{}}
-                  // shoppingCart{keyBord{}, Mouse{}, Monitor{}}
+// person{Addree{}, contactInfo{}}
+// shoppingCart{keyBord{}, Mouse{}, Monitor{}}
 
-                  const person22 ={
-                    fullName: "sourav chongrey",
-                    age:30,
-                    isStudent: true,
-                    hobbies:["singing", "dancing", "reading"],
-                    address:{
-                      street:'Hooghly',
-                      city : "Arambagh",
-                      Country:"MYINDIA"
-                    }
-                  }
-                  console.log(person22.fullName, person22.address.city)
-                  console.log(person22.hobbies[0])
-     for(const property in person22.address){
-       console.log(person22.address[property])
-      // console.log(property)
+const person22 = {
+  fullName: "sourav chongrey",
+  age: 30,
+  isStudent: true,
+  hobbies: ["singing", "dancing", "reading"],
+  address: {
+    street: "Hooghly",
+    city: "Arambagh",
+    Country: "MYINDIA",
+  },
+};
+console.log(person22.fullName, person22.address.city);
+console.log(person22.hobbies[0]);
+for (const property in person22.address) {
+  console.log(person22.address[property]);
+  // console.log(property)
+}
+//  complex nested object
+class Person23 {
+  constructor(name, age, ...address) {
+    this.name = name;
+    this.age = age;
+    this.address = new Address(...address);
+  }
+}
+class Address {
+  constructor(street, city, country) {
+    this.street = street;
+    this.city = city;
+    this.country = country;
+  }
+}
 
-     }
-    //  complex nested object
-    class Person23 {
-      constructor(name,age,...address){
-        this.name = name;
-        this.age = age;
-        this.address = new Address(...address)
-      }
-    }
-     class Address{
-      constructor(street, city, country){
-        this.street = street;
-        this.city = city;
-        this.country = country
-      }
-     }
+const p1 = new Person23("sourav", 30, "Hooghly", "Arambagh", "MYINDIA");
+const p2 = new Person23("akash", 30, "Hooghly", "Arambagh", "MYINDIA");
+console.log(p1.address.country);
+console.log(p2);
+//  array of object
+const fruuitsObj = [
+  { name: "apple", color: "red", calories: 95 },
+  { name: "banana", color: "yellow", calories: 105 },
+  { name: "orange", color: "orange", calories: 95 },
+  { name: "mango", color: "yellow", calories: 105 },
+  { name: "coconut", color: "white", calories: 56 },
+];
+console.log(fruuitsObj[3]);
 
 
-     const p1 = new Person23("sourav", 30, "Hooghly", "Arambagh", "MYINDIA");
-     const p2 = new Person23("akash", 30, "Hooghly", "Arambagh", "MYINDIA");
-     console.log(p1.address.country)
-     console.log(p2)
+// loop inside array object
+// access all property using loop 
+for (const { name, color, calories } of fruuitsObj) {
+  console.log(name);
+  console.log(color);
+  console.log(calories)
+}
+// acess single property 
+console.log(fruuitsObj[0].name, "www"); // apple
+console.log(fruuitsObj[1].name);
+console.log(fruuitsObj[2].name);
+// acess aother property
+console.log(fruuitsObj[2].color);
+console.log(fruuitsObj[0].color);
+console.log(fruuitsObj[1].color);
+// acess another property
+console.log(fruuitsObj[0].calories)
+console.log(fruuitsObj[1].calories)
+console.log(fruuitsObj[2].calories)
+console.log(fruuitsObj[3].calories)
+
+// insert a new object using push method
+fruuitsObj.push({name:'luchi', color:"light red", calories:200})
+console.log(fruuitsObj)
+// using pop method 
+fruuitsObj.pop()
+console.log(fruuitsObj)  // remove luchii
+// using splice 
+
+fruuitsObj.splice(2,0,{name:"paddy"})
+console.log(fruuitsObj)
+
+// fruuitsObj.splice(0,3)
+// console.log(fruuitsObj)
+
+
+// slice - method
+
+const number = [6,7,8,9,1,2,3,4];
+// slice() মেথডটি ব্যবহার করে একটি নতুন সাব-অ্যারে তৈরি করা হচ্ছে
+const subNumber = number.slice(0,3) //[6,7,8]
+console.log(subNumber)
+
+// one more example
+
+const subNumber1 = number.slice(3,6) //[9,1,2] 
+console.log(subNumber1)
+
+
+
+
+
+
+
