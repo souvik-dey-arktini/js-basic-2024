@@ -1685,7 +1685,11 @@ console.log(subNumber)
 const subNumber1 = number.slice(3,6) //[9,1,2] 
 console.log(subNumber1)
 
+// foreEach
 
+ fruuitsObj.forEach((fruit)=>{
+  console.log(fruit.name, fruit.color, fruit.calories);
+})
 
 
 
