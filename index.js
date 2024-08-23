@@ -1691,7 +1691,28 @@ console.log(subNumber1)
   console.log(fruit.name, fruit.color, fruit.calories);
 })
 
+// basic example of reducer
+// জাভাস্ক্রিপ্টে reduce মেথড হল একটি অ্যারের সমস্ত উপাদানকে একটি একক মানে রূপান্তর করার জন্য ব্যবহৃত হয়। এটি একটি কলব্যাক ফাংশন নেয় যা প্রতিটি অ্যারে উপাদানের জন্য কল করা হয় এবং একটি আরম্ভিক মান (অপশনাল) নেয়।
 
 
+// 2nd example of reduce
+const fruitsObj = [
+  { name: 'Apple', calories: 52 },
+  { name: 'Banana', calories: 96 },
+  { name: 'Orange', calories: 47 }
+];
 
+const TotalCalories = fruitsObj.reduce((total, fruit) => { 
+  return total + fruit.calories;
+}, 0);
 
+console.log(TotalCalories); // আউটপুট: 195
+// ...........................................
+const numbersr = [1, 2, 3, 4, 5];
+
+const summ = numbersr.reduce((accumulator, currentValue) => {
+  return accumulator + currentValue;
+}, 0);
+
+console.log(summ); // আউটপুট: 15
+// ...........................................
