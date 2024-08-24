@@ -1716,3 +1716,22 @@ const summ = numbersr.reduce((accumulator, currentValue) => {
 
 console.log(summ); // আউটপুট: 15
 // ...........................................
+
+// filter methods 
+
+const numbers3 = [1,2,3,4,5,6,7,7,8,9,9,9,8,6,6,5,5,4,32];
+
+// create filter function 
+
+const isEvent3 = (number)=> number % 2 === 0 ;
+
+// add isEvent function in filter method
+
+const filterNumber = numbers3.filter(isEvent3);
+console.log(filterNumber)
+
+
+// filter method easy example 
+
+const filterOddNum = numbers3.filter((number)=> number % 2 !== 0);
+console.log( filterOddNum)
