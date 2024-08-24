@@ -1804,5 +1804,9 @@ console.log(sortgpaLowtoHi)
 const sortgpaHiToLow = people.sort((a,b)=>b.gpa - a.gpa);
 console.log(sortgpaHiToLow)
 
+// sort by name
 
+const sortByName = people.sort((a,b)=>a.name.localeCompare(b.name));
+ console.log(sortByName)
+ 
 
