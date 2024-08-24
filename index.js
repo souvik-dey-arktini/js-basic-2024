@@ -1735,3 +1735,74 @@ console.log(filterNumber)
 
 const filterOddNum = numbers3.filter((number)=> number % 2 !== 0);
 console.log( filterOddNum)
+
+// using sort() method
+// 
+
+const numbers4 = [1, 2, 3, 4, 5, 6, 55, 7, 7, 8, 9, 9, 9, 8, 6, 6, 5, 5, 4, 32];  
+
+const sortNumbers = numbers4.sort();
+console.log(sortNumbers)
+// ans = [
+    1,
+    2,
+    3,
+    32,
+    4,
+    4,
+    5,
+    5,
+    5,
+    55,
+    6,
+    6,
+    6,
+    7,
+    7,
+    8,
+    8,
+    9,
+    9,
+    9
+// ]
+
+// small to big 
+
+const smallToBig = numbers4.sort((a,b)=>a-b);
+console.log(smallToBig)
+
+
+// big to small 
+
+const bigToSmall = numbers4.sort((a,b)=>b-a);
+console.log(bigToSmall);
+
+// create a object 
+
+const people = [
+  {name:"sourav", age:30, gpa:7.9},
+  {name:"akash", age:22, gpa: 8.9},
+  {name:"nil", age:28, gpa: 6.4}
+]
+
+// sort age  lowest to highest
+
+const sortAgeLowToHi = people.sort((a,b)=>a.age - b.age);
+console.log(sortAgeLowToHi);
+
+// sort age highest to lowest
+
+const sortAgeHiToLow = people.sort((a,b)=>b.age - a.age)
+console.log(sortAgeHiToLow);
+
+// sort gpa lowest to highest
+const sortgpaLowtoHi = people.sort((a,b)=>a.gpa - b.gpa);
+console.log(sortgpaLowtoHi)
+
+// sort gpa highest to lowest
+
+const sortgpaHiToLow = people.sort((a,b)=>b.gpa - a.gpa);
+console.log(sortgpaHiToLow)
+
+
+
