@@ -1808,5 +1808,16 @@ console.log(sortgpaHiToLow)
 
 const sortByName = people.sort((a,b)=>a.name.localeCompare(b.name));
  console.log(sortByName)
- 
+//  
+class Vehicle {
+  /**
+   * Create a Vehicle object
+   * @param {string} color - color of the vehicle
+   * @param {number} wheels - number of wheels
+   */
+  constructor(color, wheels) {
+    this.color = color;
+    this.wheels = wheels;
+  }
+}
 
